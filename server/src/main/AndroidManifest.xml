@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.tcpsocket">
+    package="com.android.server">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,7 +14,7 @@
         android:theme="@style/Theme.TCPSocket">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.android.server.MainActivity"
             android:exported="true">
 
             <intent-filter>
