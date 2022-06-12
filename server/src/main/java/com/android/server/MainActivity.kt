@@ -44,8 +44,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun openServer() = lifecycleScope.launch(Dispatchers.IO) {
         try {
-            // Read from socket input stream
-            serverSocket = ServerSocket() // Create server socket object
+            // Create server socket object
+            serverSocket = ServerSocket()
 
             // Bind server socket to specific address & port
             val socketAddress = InetSocketAddress("localhost", 1500)
